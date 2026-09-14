@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Student Registration</h2>
+            <p class="subtitle">
+                Create your student account
+            </p>
+            <form id="registerForm">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter your name" required>
+                <label for="studentRoll">Roll / Student ID</label>
+                <input type="text" id="studentRoll" placeholder="Enter Student ID" required>
+                <label for="studentDept">Department</label>
+
+                <select id="studentDept" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">Computer Science & Engineering</option>
+                    <option value="ECE">Electronics & Communication</option>
+                    <option value="EE">Electrical Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                </select>
+
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" placeholder="Create Password" required>
+                <button type="submit" class="btn primary-btn">
+                    Register
+                </button>
+                <p id="registerMessage" class="message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

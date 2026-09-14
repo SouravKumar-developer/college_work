@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Admin Dashboard
+        </div>
+        <!-- <div class="nav-links">
+        <a href="index.html">Home</a>
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+    </div> -->
+
+    </nav>
+
+    <div class="dashboard">
+
+        <h1>Admin Dashboard</h1>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h2>Add Student Marks</h2>
+                <form id="marksForm">
+                    <label>Student Roll / ID</label>
+                    <input type="text" id="marksRoll" placeholder="Enter Student ID" required>
+                    <label>Subject</label>
+                    <input type="text" id="subject" placeholder="Enter Subject" required>
+                    <label>Total Marks Obtained</label>
+                    <input type="number" id="totalMarks" placeholder="Enter marks" min="0" max="100" required>
+                    <button type="submit" class="btn primary-btn">
+                        Add Marks
+                    </button>
+                    <p id="marksMessage" class="message"></p>
+                </form>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Registered Students</h2>
+                <div id="studentList"></div>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <h2>Student Marks</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody id="marksTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

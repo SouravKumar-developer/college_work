@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <h2>Admin Login</h2>
+
+            <p class="subtitle">
+                Login to manage student marks
+            </p>
+
+            <form id="adminLoginForm">
+                <label for="adminId">Admin ID</label>
+                <input type="text" id="adminId" placeholder="Enter Admin ID" required>
+
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" placeholder="Enter Password" required>
+
+                <button type="submit" class="btn primary-btn">
+                    Login
+                </button>
+                <p id="adminLoginMessage" class="message"></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
